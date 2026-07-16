@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Duo Tech & Engineering</title>
+<meta name="description" content="Get in touch with Duo Tech & Engineering for a free consultation on your next web or mobile project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- THREE.JS 3D BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+
+
+<nav id="nav">
+  <div class="nav-i">
+    <a href="index.html" class="logo">
+        <img src="logobg1.png" style="width: 200px; height: auto;" alt="Duo Tech & Engineering">
+        <!-- <div class="logo-txt">GENGHIX</div> -->
+      </a>
+    <ul class="nav-links" id="navL">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html#pricing">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" style="color:var(--cy)">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-btn">Free Consultation</a>
+    <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="contact">
+  <div class="wrap">
+    <div style="text-align:center;max-width:600px;margin:0 auto 4rem">
+      <span class="sec-label rv">Get In Touch</span>
+      <div class="sec-line rv" style="margin:0 auto 1.5rem"></div>
+      <h2 class="sec-title rv" style="font-size:clamp(2rem,3.5vw,3rem);margin-bottom:1rem">Let's Build Something <span class="grad-txt">Together</span></h2>
+      <p class="rv rv1" style="color:var(--w3)">Have an idea or a project? Our team responds within 4 business hours — often sooner.</p>
+    </div>
+    <div class="ct-g">
+      <div>
+        <h3 style="font-family:var(--fd);font-size:1.3rem;font-weight:600;color:var(--w);margin-bottom:1.5rem" class="rv">Contact Information</h3>
+        <div class="ct-item rv"><div class="ct-ico">📧</div><div><div class="ct-lbl">Email us</div><div class="ct-val">info@genghixtech.com</div></div></div>
+        <!-- <div class="ct-item rv rv1"><div class="ct-ico">💬</div><div><div class="ct-lbl">WhatsApp</div><div class="ct-val">+92 300 000 0000</div></div></div> -->
+        <div class="ct-item rv rv2"><div class="ct-ico">📍</div><div><div class="ct-lbl">Location</div><div class="ct-val">Lahore, Pakistan · Remote Worldwide</div></div></div>
+        <div class="ct-item rv"><div class="ct-ico">⏰</div><div><div class="ct-lbl">Business Hours</div><div class="ct-val">Mon–Fri, 9 AM – 7 PM PKT</div></div></div>
+        <div class="rv" style="margin-top:1.5rem">
+          <p style="font-size:.82rem;color:var(--w3);margin-bottom:.9rem">Follow us</p>
+          <div class="soc-row">
+            <a href="#" class="soc-btn" title="LinkedIn">💼</a>
+            <a href="#" class="soc-btn" title="GitHub">🐙</a>
+            <a href="#" class="soc-btn" title="Twitter">🐦</a>
+            <a href="#" class="soc-btn" title="Instagram">📸</a>
+            <a href="#" class="soc-btn" title="Behance">🎨</a>
+          </div>
+        </div>
+        <div class="map-ph rv"><span style="font-size:1.5rem">🗺️</span><span>Lahore, Pakistan</span><span style="font-size:.73rem;opacity:.5">Serving clients globally, remotely</span></div>
+      </div>
+      <div class="form-glass rv rv1">
+        <h3 style="font-family:var(--fd);font-size:1.2rem;font-weight:600;color:var(--w);margin-bottom:.5rem">Send a Message</h3>
+        <p style="font-size:.85rem;color:var(--w3);margin-bottom:1.75rem">Fill in the details and we'll respond with a free consultation proposal.</p>
+        <div class="fr">
+          <div class="fg"><label>First Name</label><input type="text" class="fc-inp" placeholder="Ahmed"></div>
+          <div class="fg"><label>Last Name</label><input type="text" class="fc-inp" placeholder="Khan"></div>
+        </div>
+        <div class="fg"><label>Email Address</label><input type="email" class="fc-inp" placeholder="ahmed@company.com"></div>
+        <div class="fg"><label>Service Needed</label>
+          <select class="fc-inp">
+            <option value="" disabled selected>Select a service...</option>
+            <option>Web Development</option><option>Mobile App Development</option><option>Flutter Development</option>
+            <option>UI/UX Design</option><option>API &amp; Backend</option><option>Bug Fixing &amp; Maintenance</option><option>Custom Software</option>
+          </select>
+        </div>
+        <div class="fr">
+          <div class="fg"><label>Budget Range</label><select class="fc-inp"><option value="" disabled selected>Budget...</option><option>Under $1,000</option><option>$1,000–$5,000</option><option>$5,000–$15,000</option><option>$15,000–$50,000</option><option>$50,000+</option></select></div>
+          <div class="fg"><label>Timeline</label><select class="fc-inp"><option value="" disabled selected>Timeline...</option><option>ASAP</option><option>1–2 months</option><option>3–6 months</option><option>6+ months</option></select></div>
+        </div>
+        <div class="fg"><label>Project Details</label><textarea class="fc-inp" placeholder="Tell us about your project — what you're building, who it's for, and what problem it solves..."></textarea></div>
+        <button class="sub-btn" onclick="this.textContent='Message sent — we will reply within 4 hours.';this.style.background='linear-gradient(135deg,#0a5c0a,#1a8c1a)'">Send Message &amp; Get Free Consultation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap">
+    <h2 class="rv">Ready to Build Your Next<br>Digital Product?</h2>
+    <p class="rv rv1">Let's talk. A free 30-minute strategy call could be the first step toward your best product yet.</p>
+    <div class="cta-btns rv rv2">
+      <a href="#contact" class="btn btn-w" style="padding:.9rem 2.25rem;font-size:1rem">Start Your Project</a>
+      <a href="portfolio.html#portfolio" class="btn btn-g" style="padding:.9rem 2.25rem;font-size:1rem;border-color:rgba(255,255,255,.3);color:var(--w)">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+    <div class="wrap">
+      <div class="ft-g">
+        <div class="ft-brand">
+          <a href="index.html" class="logo">
+            <!-- <div class="logo-box">DT</div> -->
+            <div class="logo-txt" style="margin-left:.75rem">GENGHIX TECH</div>
+          </a>
+          <p>Turning Your Vision Into Reality Through Technology. We build products that grow businesses.</p>
+          <div class="ft-tag">Build • Innovate • Solve</div>
+          <div class="soc-row" style="margin-top:1.1rem">
+            <a href="#" class="soc-btn" title="LinkedIn">💼</a>
+            <a href="#" class="soc-btn" title="GitHub">🐙</a>
+            <a href="#" class="soc-btn" title="Twitter">🐦</a>
+            <a href="#" class="soc-btn" title="Instagram">📸</a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h4>Services</h4>
+          <ul class="ft-links">
+            <li><a href="services.html#services">Web Development</a></li>
+            <li><a href="services.html#services">Mobile Apps</a></li>
+            <li><a href="services.html#services">Flutter Dev</a></li>
+            <li><a href="services.html#services">UI/UX Design</a></li>
+            <li><a href="services.html#services">API &amp; Backend</a></li>
+            <li><a href="services.html#services">Bug Fixing</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Company</h4>
+          <ul class="ft-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Contact</h4>
+          <ul class="ft-links">
+            <li><a href="mailto:info@genghixtech.com">info@genghixtech.com</a></li>
+            <li><a href="#">WhatsApp Us</a></li>
+            <li><a href="contact.html#contact">Free Consultation</a></li>
+            <li><a href="services.html#pricing">Pricing</a></li>
+          </ul>
+          <div
+            style="margin-top:1.25rem;padding:1rem;background:rgba(255,182,39,.06);border:1px solid var(--border);border-radius:var(--r8)">
+            <div style="font-size:.72rem;color:var(--cy);font-family:var(--fm);margin-bottom:.25rem">RESPONSE TIME</div>
+            <div style="font-size:.95rem;color:var(--w);font-weight:600">Under 4 hours</div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <p>© 2025 Duo Tech &amp; Engineering. All rights reserved.</p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap"><a href="#">Privacy Policy</a><a href="#">Terms of
+            Service</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="index.html">
+    <button id="btt">↑</button>
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

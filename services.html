@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Pricing — Duo Tech & Engineering</title>
+<meta name="description" content="Web development, mobile apps, Flutter, UI/UX design, backend & API development, e-commerce, DevOps, and more — with transparent pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- THREE.JS 3D BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAV -->
+
+
+<nav id="nav">
+  <div class="nav-i">
+    <a href="index.html" class="logo">
+        <img src="logobg1.png" style="width: 200px; height: auto;" alt="Duo Tech & Engineering">
+        <!-- <div class="logo-txt">GENGHIX</div> -->
+      </a>
+    <ul class="nav-links" id="navL">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="services.html" style="color:var(--cy)">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html#pricing">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-btn">Free Consultation</a>
+    <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="services">
+  <div class="wrap">
+    <div style="text-align:center;max-width:600px;margin:0 auto">
+      <span class="sec-label rv">What We Build</span>
+      <div class="sec-line rv" style="margin:0 auto 1.5rem"></div>
+      <h2 class="sec-title rv" style="font-size:clamp(2rem,3.5vw,3rem);margin-bottom:1rem">Services That <span class="grad-txt">Drive Growth</span></h2>
+      <p class="rv rv1" style="color:var(--w3)">From pixel-perfect interfaces to production-grade infrastructure — a full-stack team under one roof.</p>
+    </div>
+    <div class="sv-grid-lg">
+      <div class="sv-card rv"><div class="sv-ico">🌐</div><h3>Web Development</h3><p>Fast, SEO-optimised, responsive websites and web apps built with React and Next.js — engineered for conversion and performance.</p><div class="sv-tags"><span class="stag">React</span><span class="stag">Next.js</span><span class="stag">TypeScript</span><span class="stag">Tailwind</span></div></div>
+      <div class="sv-card rv rv1"><div class="sv-ico">📱</div><h3>Mobile App Development</h3><p>Native and cross-platform mobile applications delivering smooth, intuitive experiences on iOS and Android.</p><div class="sv-tags"><span class="stag">Flutter</span><span class="stag">Swift</span><span class="stag">Kotlin</span><span class="stag">React Native</span></div></div>
+      <div class="sv-card rv rv2"><div class="sv-ico">🦋</div><h3>Flutter Development</h3><p>Beautiful, performant Flutter apps for iOS, Android, web, and desktop — one codebase, every platform.</p><div class="sv-tags"><span class="stag">Flutter</span><span class="stag">Dart</span><span class="stag">Firebase</span><span class="stag">BLoC</span></div></div>
+      <div class="sv-card rv"><div class="sv-ico">🎨</div><h3>UI/UX Design</h3><p>User research, wireframes, interactive prototypes, and full design systems — crafted in Figma with close attention to detail.</p><div class="sv-tags"><span class="stag">Figma</span><span class="stag">Prototyping</span><span class="stag">Design Systems</span></div></div>
+      <div class="sv-card rv rv1"><div class="sv-ico">⚙️</div><h3>API &amp; Backend Development</h3><p>Scalable REST and GraphQL APIs, microservices, databases, and cloud infrastructure — the engine that powers your product.</p><div class="sv-tags"><span class="stag">Node.js</span><span class="stag">FastAPI</span><span class="stag">PostgreSQL</span><span class="stag">AWS</span></div></div>
+      <div class="sv-card rv rv2"><div class="sv-ico">🔧</div><h3>Bug Fixing &amp; Maintenance</h3><p>Rapid diagnosis and resolution of bugs, performance bottlenecks, and technical debt — keeping your product stable long-term.</p><div class="sv-tags"><span class="stag">Debugging</span><span class="stag">Optimization</span><span class="stag">Monitoring</span></div></div>
+      <div class="sv-card rv"><div class="sv-ico">🛒</div><h3>E-Commerce Development</h3><p>Custom online stores and headless commerce builds with secure checkout, inventory, and payment gateway integrations.</p><div class="sv-tags"><span class="stag">Shopify</span><span class="stag">WooCommerce</span><span class="stag">Stripe</span><span class="stag">Custom Carts</span></div></div>
+      <div class="sv-card rv rv1"><div class="sv-ico">🏗️</div><h3>Custom Software &amp; SaaS</h3><p>Multi-tenant SaaS platforms, internal tools, and business software built around your exact workflow and pricing model.</p><div class="sv-tags"><span class="stag">Laravel</span><span class="stag">Multi-Tenant</span><span class="stag">Subscriptions</span></div></div>
+      <div class="sv-card rv rv2"><div class="sv-ico">☁️</div><h3>DevOps &amp; Cloud Deployment</h3><p>CI/CD pipelines, containerization, and cloud infrastructure setup so your team can ship confidently and scale reliably.</p><div class="sv-tags"><span class="stag">AWS</span><span class="stag">Docker</span><span class="stag">CI/CD</span><span class="stag">Kubernetes</span></div></div>
+      <div class="sv-card rv"><div class="sv-ico">📝</div><h3>WordPress &amp; CMS Development</h3><p>Custom themes, plugins, and headless CMS builds — content-managed sites that are fast, secure, and easy to update.</p><div class="sv-tags"><span class="stag">WordPress</span><span class="stag">Webflow</span><span class="stag">Headless CMS</span></div></div>
+      <div class="sv-card rv rv1"><div class="sv-ico">🗄️</div><h3>Database Design &amp; Optimization</h3><p>Schema design, query tuning, and migrations across relational and NoSQL databases — built to scale with your data.</p><div class="sv-tags"><span class="stag">MySQL</span><span class="stag">PostgreSQL</span><span class="stag">MongoDB</span></div></div>
+      <div class="sv-card rv rv2"><div class="sv-ico">🧪</div><h3>QA &amp; Software Testing</h3><p>Manual and automated testing — unit, integration, and end-to-end — to catch issues before your users do.</p><div class="sv-tags"><span class="stag">Cypress</span><span class="stag">Selenium</span><span class="stag">Automated Testing</span></div></div>
+      <div class="sv-card rv"><div class="sv-ico">🤖</div><h3>AI &amp; Automation Integration</h3><p>LLM-powered features, chatbots, and workflow automation that cut manual work and add intelligence to your product.</p><div class="sv-tags"><span class="stag">LLM Integration</span><span class="stag">Chatbots</span><span class="stag">Automation</span></div></div>
+      <div class="sv-card rv rv1"><div class="sv-ico">📈</div><h3>Website Redesign &amp; Audits</h3><p>Performance and Core Web Vitals audits, SEO fixes, and full redesigns for sites that have outgrown their current build.</p><div class="sv-tags"><span class="stag">Core Web Vitals</span><span class="stag">SEO</span><span class="stag">Redesign</span></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="pricing">
+  <div class="wrap">
+    <div style="text-align:center;max-width:600px;margin:0 auto">
+      <span class="sec-label rv">Pricing</span>
+      <div class="sec-line rv" style="margin:0 auto 1.5rem"></div>
+      <h2 class="sec-title rv" style="font-size:clamp(2rem,3.5vw,3rem);margin-bottom:1rem">Simple, <span class="grad-txt">Honest Packages</span></h2>
+      <p class="rv rv1" style="color:var(--w3)">No surprise invoices. Clear deliverables, transparent prices. Free consultation to match you to the right plan.</p>
+    </div>
+    <div class="pr-grid">
+      <div class="pr-card rv">
+        <div class="pr-tier">Starter</div>
+        <div class="pr-price">Custom</div>
+        <p class="pr-sub">Perfect for startups launching their first digital product.</p>
+        <ul class="pr-feats">
+          <li><span class="pfc">✓</span>Landing page or basic web app</li>
+          <li><span class="pfc">✓</span>Mobile-responsive design</li>
+          <li><span class="pfc">✓</span>Up to 5 core screens/pages</li>
+          <li><span class="pfc">✓</span>Basic API integration (1–2 APIs)</li>
+          <li><span class="pfc">✓</span>30-day post-launch support</li>
+          <li><span class="pfc">✓</span>Source code handover</li>
+          <li class="off"><span class="pfx">✕</span>Custom backend development</li>
+          <li class="off"><span class="pfx">✕</span>Admin dashboard</li>
+        </ul>
+        <a href="contact.html#contact" class="btn btn-g" style="width:100%;justify-content:center">Get a Quote</a>
+      </div>
+      <div class="pr-card feat rv rv1">
+        <div class="pr-badge">Most Popular</div>
+        <div class="pr-tier">Professional</div>
+        <div class="pr-price">Custom</div>
+        <p class="pr-sub">For growing businesses ready for a complete, production-grade product.</p>
+        <ul class="pr-feats">
+          <li><span class="pfc">✓</span>Full web or mobile application</li>
+          <li><span class="pfc">✓</span>Custom UI/UX design (Figma)</li>
+          <li><span class="pfc">✓</span>Unlimited screens/pages</li>
+          <li><span class="pfc">✓</span>Custom backend + REST API</li>
+          <li><span class="pfc">✓</span>Admin dashboard included</li>
+          <li><span class="pfc">✓</span>Authentication + Payments</li>
+          <li><span class="pfc">✓</span>3-month post-launch support</li>
+          <li><span class="pfc">✓</span>Cloud deployment (AWS/GCP)</li>
+        </ul>
+        <a href="contact.html#contact" class="btn btn-p" style="width:100%;justify-content:center">Get a Quote</a>
+      </div>
+      <div class="pr-card rv rv2">
+        <div class="pr-tier">Enterprise</div>
+        <div class="pr-price">Custom</div>
+        <p class="pr-sub">For companies needing a dedicated team or complex systems.</p>
+        <ul class="pr-feats">
+          <li><span class="pfc">✓</span>Everything in Professional</li>
+          <li><span class="pfc">✓</span>Dedicated team (2–5 engineers)</li>
+          <li><span class="pfc">✓</span>Microservices architecture</li>
+          <li><span class="pfc">✓</span>CI/CD pipeline setup</li>
+          <li><span class="pfc">✓</span>Security &amp; performance audits</li>
+          <li><span class="pfc">✓</span>Priority 24/7 support SLA</li>
+          <li><span class="pfc">✓</span>NDA + full IP ownership</li>
+          <li><span class="pfc">✓</span>Monthly retainer available</li>
+        </ul>
+        <a href="contact.html#contact" class="btn btn-g" style="width:100%;justify-content:center">Talk to Sales</a>
+      </div>
+    </div>
+    <p class="rv" style="text-align:center;margin-top:2rem;font-size:.875rem;color:var(--w3)">All projects start with a <strong style="color:var(--w)">free 30-min strategy call</strong> — no commitment, no pressure. 💬</p>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="wrap">
+    <h2 class="rv">Ready to Build Your Next<br>Digital Product?</h2>
+    <p class="rv rv1">Let's talk. A free 30-minute strategy call could be the first step toward your best product yet.</p>
+    <div class="cta-btns rv rv2">
+      <a href="contact.html#contact" class="btn btn-w" style="padding:.9rem 2.25rem;font-size:1rem">Start Your Project</a>
+      <a href="portfolio.html#portfolio" class="btn btn-g" style="padding:.9rem 2.25rem;font-size:1rem;border-color:rgba(255,255,255,.3);color:var(--w)">See Our Work</a>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <div class="wrap">
+      <div class="ft-g">
+        <div class="ft-brand">
+          <a href="index.html" class="logo">
+            <!-- <div class="logo-box">DT</div> -->
+            <div class="logo-txt" style="margin-left:.75rem">GENGHIX TECH</div>
+          </a>
+          <p>Turning Your Vision Into Reality Through Technology. We build products that grow businesses.</p>
+          <div class="ft-tag">Build • Innovate • Solve</div>
+          <div class="soc-row" style="margin-top:1.1rem">
+            <a href="#" class="soc-btn" title="LinkedIn">💼</a>
+            <a href="#" class="soc-btn" title="GitHub">🐙</a>
+            <a href="#" class="soc-btn" title="Twitter">🐦</a>
+            <a href="#" class="soc-btn" title="Instagram">📸</a>
+          </div>
+        </div>
+        <div class="ft-col">
+          <h4>Services</h4>
+          <ul class="ft-links">
+            <li><a href="services.html#services">Web Development</a></li>
+            <li><a href="services.html#services">Mobile Apps</a></li>
+            <li><a href="services.html#services">Flutter Dev</a></li>
+            <li><a href="services.html#services">UI/UX Design</a></li>
+            <li><a href="services.html#services">API &amp; Backend</a></li>
+            <li><a href="services.html#services">Bug Fixing</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Company</h4>
+          <ul class="ft-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="portfolio.html#portfolio">Portfolio</a></li>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="blog.html#blog">Blog</a></li>
+            <li><a href="contact.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="ft-col">
+          <h4>Contact</h4>
+          <ul class="ft-links">
+            <li><a href="mailto:hello@duotech.dev">info@genghixtech.com</a></li>
+            <li><a href="#">WhatsApp Us</a></li>
+            <li><a href="contact.html#contact">Free Consultation</a></li>
+            <li><a href="services.html#pricing">Pricing</a></li>
+          </ul>
+          <div
+            style="margin-top:1.25rem;padding:1rem;background:rgba(255,182,39,.06);border:1px solid var(--border);border-radius:var(--r8)">
+            <div style="font-size:.72rem;color:var(--cy);font-family:var(--fm);margin-bottom:.25rem">RESPONSE TIME</div>
+            <div style="font-size:.95rem;color:var(--w);font-weight:600">Under 4 hours</div>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bot">
+        <p>© 2025 Duo Tech &amp; Engineering. All rights reserved.</p>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap"><a href="#">Privacy Policy</a><a href="#">Terms of
+            Service</a><a href="#">Sitemap</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="index.html">
+    <button id="btt">↑</button>
+  </a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
