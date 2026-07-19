@@ -21,7 +21,7 @@
 .art-meta-item{font-size:.8rem;color:var(--w3);font-family:var(--fm)}
 
 /* ---- Cover image / icon banner ---- */
-.art-cover{height:340px;border-radius:var(--r24);display:flex;align-items:center;justify-content:center;font-size:6.5rem;margin-bottom:3.5rem;border:1px solid var(--border);position:relative;overflow:hidden}
+.art-cover{height:500px;border-radius:var(--r24);display:flex;align-items:center;justify-content:center;font-size:6.5rem;margin-bottom:3.5rem;border:1px solid var(--border);position:relative;overflow:hidden}
 .art-cover::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:36px 36px}
 @media(max-width:700px){.art-cover{height:220px;font-size:4rem}}
 
