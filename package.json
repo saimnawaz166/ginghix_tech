@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "nodemailer": "^9.0.3"
+  },
+  "name": "new-folder-(3)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimnawaz166/ginghix_tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saimnawaz166/ginghix_tech/issues"
+  },
+  "homepage": "https://github.com/saimnawaz166/ginghix_tech#readme"
+}

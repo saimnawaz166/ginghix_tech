@@ -80,28 +80,23 @@
       <div class="form-glass rv rv1">
         <h3 style="font-family:var(--fd);font-size:1.2rem;font-weight:600;color:var(--w);margin-bottom:.5rem">Send a Message</h3>
         <p style="font-size:.85rem;color:var(--w3);margin-bottom:1.75rem">Fill in the details and we'll respond with a free consultation proposal.</p>
-        <div class="fr">
-          <div class="fg"><label>First Name</label><input type="text" class="fc-inp" placeholder="Ahmed"></div>
-          <div class="fg"><label>Last Name</label><input type="text" class="fc-inp" placeholder="Khan"></div>
-        </div>
-        <div class="fg"><label>Email Address</label><input type="email" class="fc-inp" placeholder="ahmed@company.com"></div>
-        <div class="fg"><label>Service Needed</label>
-          <select class="fc-inp">
-            <option value="" disabled selected>Select a service...</option>
-            <option>Web Development</option><option>Mobile App Development</option><option>Flutter Development</option>
-            <option>UI/UX Design</option><option>API &amp; Backend</option><option>Bug Fixing &amp; Maintenance</option><option>Custom Software</option>
-          </select>
-        </div>
-        <div class="fr">
-          <div class="fg"><label>Budget Range</label><select class="fc-inp"><option value="" disabled selected>Budget...</option><option>Under $1,000</option><option>$1,000–$5,000</option><option>$5,000–$15,000</option><option>$15,000–$50,000</option><option>$50,000+</option></select></div>
-          <div class="fg"><label>Timeline</label><select class="fc-inp"><option value="" disabled selected>Timeline...</option><option>ASAP</option><option>1–2 months</option><option>3–6 months</option><option>6+ months</option></select></div>
-        </div>
-        <div class="fg"><label>Project Details</label><textarea class="fc-inp" placeholder="Tell us about your project — what you're building, who it's for, and what problem it solves..."></textarea></div>
-        <button class="sub-btn" onclick="this.textContent='Message sent — we will reply within 4 hours.';this.style.background='linear-gradient(135deg,#0a5c0a,#1a8c1a)'">Send Message &amp; Get Free Consultation</button>
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="fr">
+            <div class="fg"><label>First Name</label><input type="text" name="first_name" class="fc-inp" placeholder="Ahmed" required></div>
+            <div class="fg"><label>Last Name</label><input type="text" name="last_name" class="fc-inp" placeholder="Khan" required></div>
+          </div>
+          <div class="fg"><label>Email Address</label><input type="email" name="email" class="fc-inp" placeholder="ahmed@company.com" required></div>
+          <div class="fg"><label>Project Details</label><textarea name="message" class="fc-inp" placeholder="Tell us about your project — what you're building, who it's for, and what problem it solves..." required></textarea></div>
+          <button type="submit" class="sub-btn">Send Message &amp; Get Free Consultation</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
+
+<a href="https://wa.me/923275534726" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
 <section id="cta">
   <div class="wrap">
@@ -168,9 +163,15 @@
         </div>
         <div class="ft-col">
           <h4>Contact</h4>
-          <ul class="ft-links">
+           <ul class="ft-links">
             <li><a href="mailto:info@genghixtech.com">info@genghixtech.com</a></li>
-            <li><a href="#">WhatsApp Us</a></li>
+
+            <li>
+              <a href="https://wa.me/923275534726" target="_blank">
+                WhatsApp Us
+              </a>
+            </li>
+
             <li><a href="contact.html#contact">Free Consultation</a></li>
             <li><a href="services.html#pricing">Pricing</a></li>
           </ul>
