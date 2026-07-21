@@ -80,15 +80,46 @@
       <div class="form-glass rv rv1">
         <h3 style="font-family:var(--fd);font-size:1.2rem;font-weight:600;color:var(--w);margin-bottom:.5rem">Send a Message</h3>
         <p style="font-size:.85rem;color:var(--w3);margin-bottom:1.75rem">Fill in the details and we'll respond with a free consultation proposal.</p>
-        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="contactForm">
           <div class="fr">
             <div class="fg"><label>First Name</label><input type="text" name="first_name" class="fc-inp" placeholder="Ahmed" required></div>
             <div class="fg"><label>Last Name</label><input type="text" name="last_name" class="fc-inp" placeholder="Khan" required></div>
           </div>
           <div class="fg"><label>Email Address</label><input type="email" name="email" class="fc-inp" placeholder="ahmed@company.com" required></div>
           <div class="fg"><label>Project Details</label><textarea name="message" class="fc-inp" placeholder="Tell us about your project — what you're building, who it's for, and what problem it solves..." required></textarea></div>
-          <button type="submit" class="sub-btn">Send Message &amp; Get Free Consultation</button>
+          <button type="submit" class="sub-btn" id="submitBtn">Send Message &amp; Get Free Consultation</button>
         </form>
+        <script>
+          document.getElementById('contactForm').addEventListener('submit', async function(e){
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const form = e.target;
+            const data = {
+              first_name: form.first_name.value,
+              last_name: form.last_name.value,
+              email: form.email.value,
+              message: form.message.value
+            };
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            try {
+              const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {'Content-Type':'application/json'},
+                body: JSON.stringify(data)
+              });
+              if(!res.ok) throw new Error('Send failed');
+              btn.textContent = 'Message sent — we will reply within 4 hours.';
+              btn.style.background = 'linear-gradient(135deg,#0a5c0a,#1a8c1a)';
+              form.reset();
+            } catch(err) {
+              btn.textContent = 'Something went wrong — please try again';
+              btn.style.background = 'linear-gradient(135deg,#8c1a1a,#5c0a0a)';
+              setTimeout(()=>{ btn.textContent = originalText; btn.style.background=''; btn.disabled=false; }, 3000);
+            }
+          });
+        </script>
       </div>
     </div>
   </div>
